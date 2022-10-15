@@ -1,0 +1,284 @@
+$ColorWhite: white;
+$ColorWhiteGrey: rgba(189, 189, 189, 1);
+$BgColorBlackGrey: rgba(22, 22, 22, 1);
+$BgColorBlack: rgba(26, 25, 26, 1);
+$BgColorGreen: rgba(0, 221, 168, 0.5);
+$BgColorRed: rgba(207, 41, 41, 0.6);
+$BgColorBlue: rgba(0, 88, 221, 0.6);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "American Captain";
+    src: url(../fonts/American\ Captain.ttf);
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url(../fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+
+body{
+    background-color: $BgColorBlack;
+    font-family: "American Captain" , sans-serif;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+    //flex: 1 0 auto;
+    color: $ColorWhite;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 2.8em;
+}
+
+.smallText{
+    font-family: "SF Pro Display" , sans-serif;
+}
+
+img{
+    width: -webkit-fill-available;
+}
+
+a{
+    color: $ColorWhite;
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        text-underline-offset:3px;
+    }
+}
+
+button{
+    background-color: rgba(255, 255, 255, 0);
+    color: $ColorWhite;
+    border: 2px solid  $ColorWhite;
+    border-radius: 8px;
+    padding: 5px 10px;
+    height: fit-content;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+header{
+    background-image: url(../img/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 600px;
+    .head{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        nav{
+            align-self: center;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                width: 300px;
+            }
+        }
+    }
+    .text{
+       display: flex;
+       flex-direction: column-reverse;
+       width: auto;
+       & > div{
+        .text__h1{
+            font-size: 2em;
+            white-space: nowrap;
+        }
+        text-align: right;
+        align-self: flex-end;
+        width: 200px;
+        font-size: 1.2em;
+        margin: 80px 8% 0px 0px;
+       }
+    }
+    button{
+        align-self: center;
+    }
+}
+.AboutUs{
+    background-color: $BgColorBlackGrey;
+    padding: 80px 50px;
+    h1{
+        font-size: 4em;
+        text-align: center;
+        margin: 20px;
+    }
+    .AboutUs-content{
+        display: flex;
+        @media(max-width: 1024px){
+            flex-wrap: wrap;
+        }
+        .AboutUs__page{
+            text-align: justify;
+            margin: 0px 30px 0px 0px;
+        }
+        img{
+            width: 50vw;
+            height: 50vh;
+            @media (max-width: 720px){
+                width: 100%;
+            }
+        }
+    }
+}
+.Icons{
+    background-color: $BgColorBlack;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    padding: 0px 0px;
+    .lines1{
+        width: 100px;
+        align-self: flex-start;
+    }
+    .lines2{
+        width: 100px;
+        transform: rotate(180deg);
+        align-self: flex-end;
+    }
+    .Icons-text{
+        text-align: center;
+        margin: 0px 0px 50px 0px;
+    }
+    .Icons-list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        .Icons-list__item{
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0px;
+            padding: 15px 10px;
+            width: 230px;
+            height: 235px;
+            border-radius: 16px;
+            img{
+                align-self: center;
+                justify-self: flex-start;
+                width: 65%;
+                height: 60%;
+                position: relative; 
+                top: -23%;
+            }
+
+            &:first-child{
+                background-color: $BgColorGreen;
+            }
+            &:nth-child(2){
+                background-color: $BgColorRed;
+            }
+            &:last-child{
+                background-color: $BgColorBlue;
+            }
+        }
+    }
+}
+.Cars{
+    background-color: $BgColorBlackGrey;
+    display: flex;
+    flex-direction: column;
+    .Cars-text{
+        align-content: flex-start;
+        margin: 40px 5%;
+    }
+}
+.CarVideo{
+    background-color: $BgColorBlackGrey;
+    img{
+        width: 10%;
+        position: absolute;
+    }
+    .CarVideo-text{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 90%;
+        margin: 40px 0px;
+        position: relative;
+        left: 5%;
+        top: 5%;
+    }
+    .CarVideo-video{
+        display: flex;
+        justify-content: center;
+        video{
+            width: 90%;
+            height: 60%;
+            z-index: 2;
+        }
+    }
+}
+
+.ContactUs{
+   background-color: $BgColorBlack;
+   font-size: large;
+   padding: 40px 0px 0px 0px;
+   .ContactUs-wraper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: relative;
+        left: 5%;
+        top: 5%;
+        width: 80%;
+        margin: 40px 0px;
+        input{
+            background-color: $BgColorBlack;
+            margin: 10px;
+            padding: 5px 15px 0px 0px;
+            color: $ColorWhite;
+            border: 0px;
+            border-bottom: 3px solid  $ColorWhite;
+            &::placeholder{
+                color: $ColorWhite
+            }
+        }
+        select{
+            background-color: $BgColorBlack;
+            color: $ColorWhite;
+            width: 180px;
+        }
+   } 
+   
+}
+
+footer{
+    background-color: $BgColorBlack;
+    .footer-block1{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 15px 0px;
+        flex-wrap: wrap;
+    }
+    .footer-block2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 15px 0px;
+        & > div{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    
+}

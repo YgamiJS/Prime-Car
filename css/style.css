@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "American Captain";
+  src: url(../fonts/American\ Captain.ttf);
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../fonts/FontsFree-Net-SFProDisplay-Regular.ttf);
+}
+body {
+  background-color: rgb(26, 25, 26);
+  font-family: "American Captain", sans-serif;
+  letter-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2.8em;
+}
+
+.smallText {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+img {
+  width: -webkit-fill-available;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 5px 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+button:hover {
+  cursor: pointer;
+}
+
+header {
+  background-image: url(../img/Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+}
+header .head {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0px;
+}
+header .head nav {
+  align-self: center;
+}
+header .head nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+header .text {
+  display: flex;
+  flex-direction: column-reverse;
+  width: auto;
+}
+header .text > div {
+  text-align: right;
+  align-self: flex-end;
+  width: 200px;
+  font-size: 1.2em;
+  margin: 80px 8% 0px 0px;
+}
+header .text > div .text__h1 {
+  font-size: 2em;
+  white-space: nowrap;
+}
+header button {
+  align-self: center;
+}
+
+.AboutUs {
+  background-color: rgb(22, 22, 22);
+  padding: 80px 50px;
+}
+.AboutUs h1 {
+  font-size: 4em;
+  text-align: center;
+  margin: 20px;
+}
+.AboutUs .AboutUs-content {
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .AboutUs .AboutUs-content {
+    flex-wrap: wrap;
+  }
+}
+.AboutUs .AboutUs-content .AboutUs__page {
+  text-align: justify;
+  margin: 0px 30px 0px 0px;
+}
+.AboutUs .AboutUs-content img {
+  width: 50vw;
+  height: 50vh;
+}
+@media (max-width: 720px) {
+  .AboutUs .AboutUs-content img {
+    width: 100%;
+  }
+}
+
+.Icons {
+  background-color: rgb(26, 25, 26);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px;
+}
+.Icons .lines1 {
+  width: 100px;
+  align-self: flex-start;
+}
+.Icons .lines2 {
+  width: 100px;
+  transform: rotate(180deg);
+  align-self: flex-end;
+}
+.Icons .Icons-text {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+.Icons .Icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.Icons .Icons-list .Icons-list__item {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  padding: 15px 10px;
+  width: 230px;
+  height: 235px;
+  border-radius: 16px;
+}
+.Icons .Icons-list .Icons-list__item img {
+  align-self: center;
+  justify-self: flex-start;
+  width: 65%;
+  height: 60%;
+  position: relative;
+  top: -23%;
+}
+.Icons .Icons-list .Icons-list__item:first-child {
+  background-color: rgba(0, 221, 168, 0.5);
+}
+.Icons .Icons-list .Icons-list__item:nth-child(2) {
+  background-color: rgba(207, 41, 41, 0.6);
+}
+.Icons .Icons-list .Icons-list__item:last-child {
+  background-color: rgba(0, 88, 221, 0.6);
+}
+
+.Cars {
+  background-color: rgb(22, 22, 22);
+  display: flex;
+  flex-direction: column;
+}
+.Cars .Cars-text {
+  align-content: flex-start;
+  margin: 40px 5%;
+}
+
+.CarVideo {
+  background-color: rgb(22, 22, 22);
+}
+.CarVideo img {
+  width: 10%;
+  position: absolute;
+}
+.CarVideo .CarVideo-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  margin: 40px 0px;
+  position: relative;
+  left: 5%;
+  top: 5%;
+}
+.CarVideo .CarVideo-video {
+  display: flex;
+  justify-content: center;
+}
+.CarVideo .CarVideo-video video {
+  width: 90%;
+  height: 60%;
+  z-index: 2;
+}
+
+.ContactUs {
+  background-color: rgb(26, 25, 26);
+  font-size: large;
+  padding: 40px 0px 0px 0px;
+}
+.ContactUs .ContactUs-wraper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  left: 5%;
+  top: 5%;
+  width: 80%;
+  margin: 40px 0px;
+}
+.ContactUs .ContactUs-wraper input {
+  background-color: rgb(26, 25, 26);
+  margin: 10px;
+  padding: 5px 15px 0px 0px;
+  color: white;
+  border: 0px;
+  border-bottom: 3px solid white;
+}
+.ContactUs .ContactUs-wraper input::-moz-placeholder {
+  color: white;
+}
+.ContactUs .ContactUs-wraper input:-ms-input-placeholder {
+  color: white;
+}
+.ContactUs .ContactUs-wraper input::placeholder {
+  color: white;
+}
+.ContactUs .ContactUs-wraper select {
+  background-color: rgb(26, 25, 26);
+  color: white;
+  width: 180px;
+}
+
+footer {
+  background-color: rgb(26, 25, 26);
+}
+footer .footer-block1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 15px 0px;
+  flex-wrap: wrap;
+}
+footer .footer-block2 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 15px 0px;
+}
+footer .footer-block2 > div {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */
