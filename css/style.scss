@@ -27,7 +27,6 @@ body{
     letter-spacing: 1.5px;
     display: flex;
     flex-direction: column;
-    //flex: 1 0 auto;
     color: $ColorWhite;
     margin: 0;
     padding: 0;
@@ -95,19 +94,22 @@ header{
         }
     }
     .text{
-       display: flex;
-       flex-direction: column-reverse;
-       width: auto;
+        display: flex;
+        justify-content: flex-end;
        & > div{
+        margin: 0 10% 0 0;
+        font-size: 1.2em;
+        text-align: right;
+        width: 300px;
         .text__h1{
-            font-size: 2em;
+            font-size: 3.2em;
             white-space: nowrap;
         }
-        text-align: right;
-        align-self: flex-end;
-        width: 200px;
-        font-size: 1.2em;
-        margin: 80px 8% 0px 0px;
+        .text__page{
+            font-family: "SF Pro Display";
+            margin: 10px 0;
+            font-weight: 600;
+        }
        }
     }
     button{
@@ -124,19 +126,15 @@ header{
     }
     .AboutUs-content{
         display: flex;
-        @media(max-width: 1024px){
-            flex-wrap: wrap;
-        }
+        justify-content: center;
+        flex-wrap: wrap;
         .AboutUs__page{
             text-align: justify;
-            margin: 0px 30px 0px 0px;
+            margin: 10px;
         }
         img{
             width: 50vw;
             height: 50vh;
-            @media (max-width: 720px){
-                width: 100%;
-            }
         }
     }
 }
@@ -178,7 +176,7 @@ header{
                 width: 65%;
                 height: 60%;
                 position: relative; 
-                top: -23%;
+                top: -5%;
             }
 
             &:first-child{
@@ -269,12 +267,19 @@ footer{
         justify-content: space-evenly;
         margin: 15px 0px;
         flex-wrap: wrap;
+        div {
+            h1{
+                font-family: "SF Pro Display";
+            }
+        }
     }
     .footer-block2{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
         margin: 15px 0px;
+        text-align: center;
+        
         & > div{
             display: flex;
             flex-wrap: wrap;

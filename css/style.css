@@ -87,19 +87,22 @@ header .head nav ul {
 }
 header .text {
   display: flex;
-  flex-direction: column-reverse;
-  width: auto;
+  justify-content: flex-end;
 }
 header .text > div {
-  text-align: right;
-  align-self: flex-end;
-  width: 200px;
+  margin: 0 10% 0 0;
   font-size: 1.2em;
-  margin: 80px 8% 0px 0px;
+  text-align: right;
+  width: 300px;
 }
 header .text > div .text__h1 {
-  font-size: 2em;
+  font-size: 3.2em;
   white-space: nowrap;
+}
+header .text > div .text__page {
+  font-family: "SF Pro Display";
+  margin: 10px 0;
+  font-weight: 600;
 }
 header button {
   align-self: center;
@@ -116,24 +119,16 @@ header button {
 }
 .AboutUs .AboutUs-content {
   display: flex;
-}
-@media (max-width: 1024px) {
-  .AboutUs .AboutUs-content {
-    flex-wrap: wrap;
-  }
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .AboutUs .AboutUs-content .AboutUs__page {
   text-align: justify;
-  margin: 0px 30px 0px 0px;
+  margin: 10px;
 }
 .AboutUs .AboutUs-content img {
   width: 50vw;
   height: 50vh;
-}
-@media (max-width: 720px) {
-  .AboutUs .AboutUs-content img {
-    width: 100%;
-  }
 }
 
 .Icons {
@@ -177,7 +172,7 @@ header button {
   width: 65%;
   height: 60%;
   position: relative;
-  top: -23%;
+  top: -5%;
 }
 .Icons .Icons-list .Icons-list__item:first-child {
   background-color: rgba(0, 221, 168, 0.5);
@@ -273,11 +268,15 @@ footer .footer-block1 {
   margin: 15px 0px;
   flex-wrap: wrap;
 }
+footer .footer-block1 div h1 {
+  font-family: "SF Pro Display";
+}
 footer .footer-block2 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 15px 0px;
+  text-align: center;
 }
 footer .footer-block2 > div {
   display: flex;
