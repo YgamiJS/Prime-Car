@@ -79,6 +79,7 @@ header .head {
 }
 header .head nav {
   align-self: center;
+  padding: 10px 0px;
 }
 header .head nav ul {
   display: flex;
@@ -216,7 +217,7 @@ header button {
   justify-content: center;
 }
 .CarVideo .CarVideo-video video {
-  width: 90%;
+  width: 100%;
   height: 60%;
   z-index: 2;
 }
@@ -238,7 +239,7 @@ header button {
 }
 .ContactUs .ContactUs-wraper input {
   background-color: rgb(26, 25, 26);
-  margin: 10px;
+  margin: 10px 0px;
   padding: 5px 15px 0px 0px;
   color: white;
   border: 0px;
