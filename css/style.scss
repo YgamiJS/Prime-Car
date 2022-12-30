@@ -136,6 +136,10 @@ header{
         img{
             width: 50vw;
             height: 50vh;
+            @media (max-width: 1024px) {
+                width: -webkit-fill-available;
+                height: -webkit-fill-available;
+            }
         }
     }
 }

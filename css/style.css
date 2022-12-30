@@ -131,6 +131,12 @@ header button {
   width: 50vw;
   height: 50vh;
 }
+@media (max-width: 1024px) {
+  .AboutUs .AboutUs-content img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+  }
+}
 
 .Icons {
   background-color: rgb(26, 25, 26);
